@@ -1,3 +1,0 @@
-- template:
-    src: mariadb.repo.j2
-    dest: /etc/yum.repos.d/mariadb.repo

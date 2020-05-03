@@ -1,7 +1,0 @@
-- name: installing
-  yum:
-    name:
-        - MariaDB-server
-        - MariaDB-client
-  notify: 
-    - mariadb start      

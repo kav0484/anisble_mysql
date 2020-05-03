@@ -1,6 +1,0 @@
-- name: install mariadb server
-  hosts: c8mysql
-  become: True
-  roles:
-    - add_repo_mariadb
-    - install_mariadb
