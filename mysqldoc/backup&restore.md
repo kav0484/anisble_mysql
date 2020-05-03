@@ -44,3 +44,10 @@ mariabackup --backup --target-dir=/var/mariadb/inc1/   --incremental-basedir=/va
 
 ### mysqldump 
 mysqldump db -u root  -p > dump.sql
+
+
+##  Отказ изменений с использованием бинарных логов
+Для того, чтобы воспользоваться бинарными логами их следует пропустить через утилиту mysqlbinlog
+
+      mysqlbinlog binlog.0000003 > binlog3.sql
+      mysql -u root -p dbname < binlog3.sql
